@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+function getBtnTxt() {
+  return "Click Me!";
+}
+
 const App = () => {
   return (
     <div>
@@ -9,7 +13,7 @@ const App = () => {
       </label>
       <input id="name" type="text" />
       <button style={{ backgroundColor: "black", color: "white" }}>
-        Submit
+        {getBtnTxt()}
       </button>
     </div>
   );
